@@ -1,0 +1,27 @@
+index.html
+  2aa162a3a946bfeb 1-124
+style.css
+  2aa162a3a946bfeb 1-393
+script.js
+  2aa162a3a946bfeb 1-156
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.23",
+  "base_commit_sha": "b59ace38d8646f2c834cdb1652902ddd33e45346",
+  "prompts": {
+    "2aa162a3a946bfeb": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "a9f99b2c-64a4-4b5e-875d-a1eb38ecc38b",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "William Chandra <william.c@gdn-commerce.com>",
+      "messages": [],
+      "total_additions": 674,
+      "total_deletions": 1,
+      "accepted_lines": 673,
+      "overriden_lines": 0
+    }
+  }
+}
