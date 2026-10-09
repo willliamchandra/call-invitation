@@ -1,10 +1,10 @@
 // ---- Edit these details ----
 const CONFIG = {
-  date: "2026-12-12T19:00:00", // local time of the call
+  date: "2026-10-09T23:00:00", // local time of the call
   where: "Wherever you are —<br />we'll meet you online",
   joinUrl: "#", // video-call link
   attire: "Something you love,<br />and your warmest smile",
-  videoId: "xjf9e6s3Cbs", // Olivia Dean – Dive
+  videoId: "S-1qyBWxLLQ", // Sade – Kiss of Life
 };
 
 const eventDate = new Date(CONFIG.date);
