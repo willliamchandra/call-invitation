@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Call of William &amp; Madeleine</title>
+  <meta name="description" content="You are warmly invited to The Call of William & Madeleine." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Great+Vibes&family=Montserrat:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Hidden YouTube player: audio only -->
+  <div id="yt-player" aria-hidden="true"></div>
+
+  <!-- Falling petals -->
+  <div class="petals" aria-hidden="true"></div>
+
+  <!-- Envelope cover -->
+  <section id="cover" class="cover">
+    <div class="envelope" id="envelope">
+      <div class="envelope-back"></div>
+      <div class="letter">
+        <p class="letter-small">You are invited to</p>
+        <p class="letter-script">The Call</p>
+        <p class="letter-small">of W &amp; M</p>
+      </div>
+      <div class="envelope-front"></div>
+      <div class="envelope-flap"></div>
+      <button class="seal" id="open-btn" aria-label="Open invitation">
+        <span>W<i>&amp;</i>M</span>
+      </button>
+    </div>
+    <p class="cover-hint">Tap the seal to open</p>
+  </section>
+
+  <!-- Invitation -->
+  <main id="invitation" class="invitation" hidden>
+    <section class="hero reveal">
+      <div class="frame">
+        <span class="corner tl"></span><span class="corner tr"></span>
+        <span class="corner bl"></span><span class="corner br"></span>
+
+        <p class="eyebrow">Together with joyful hearts</p>
+        <h1 class="title">
+          <span class="title-small">The Call of</span>
+          <span class="names">William <em>&amp;</em> Madeleine</span>
+        </h1>
+        <div class="divider" aria-hidden="true">
+          <svg viewBox="0 0 200 20"><path d="M0 10 H80 M120 10 H200" /><path d="M100 2 C92 2 88 10 100 18 C112 10 108 2 100 2 Z" /></svg>
+        </div>
+        <p class="lead">request the pleasure of your company<br />as two voices become one conversation</p>
+        <p class="date" id="date-text"></p>
+        <p class="time" id="time-text"></p>
+      </div>
+    </section>
+
+    <section class="quote reveal">
+      <p>&ldquo;Some calls you answer,<br />and some answer you.&rdquo;</p>
+    </section>
+
+    <section class="countdown reveal">
+      <h2 class="section-title">Counting the Moments</h2>
+      <div class="timer" id="timer">
+        <div><span id="cd-days">0</span><small>Days</small></div>
+        <div><span id="cd-hours">0</span><small>Hours</small></div>
+        <div><span id="cd-mins">0</span><small>Minutes</small></div>
+        <div><span id="cd-secs">0</span><small>Seconds</small></div>
+      </div>
+    </section>
+
+    <section class="details reveal">
+      <h2 class="section-title">The Details</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">&#10086;</div>
+          <h3>When</h3>
+          <p id="detail-when"></p>
+        </article>
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">&#9743;</div>
+          <h3>Where</h3>
+          <p id="detail-where"></p>
+          <a class="btn btn-ghost" id="join-link" target="_blank" rel="noopener">Join the Call</a>
+        </article>
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">&#10047;</div>
+          <h3>Attire</h3>
+          <p id="detail-attire"></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="rsvp reveal">
+      <h2 class="section-title">Kindly Respond</h2>
+      <p class="lead">We would be honoured to hear your voice.</p>
+      <form id="rsvp-form" class="rsvp-form">
+        <input type="text" name="name" placeholder="Your name" required />
+        <div class="choices">
+          <label><input type="radio" name="attending" value="yes" checked /> <span>Joyfully accepts</span></label>
+          <label><input type="radio" name="attending" value="no" /> <span>Regretfully declines</span></label>
+        </div>
+        <textarea name="message" rows="3" placeholder="A note for William &amp; Madeleine (optional)"></textarea>
+        <button type="submit" class="btn">Send RSVP</button>
+        <p class="rsvp-thanks" id="rsvp-thanks" hidden></p>
+      </form>
+    </section>
+
+    <footer class="footer reveal">
+      <p class="names-small">William <em>&amp;</em> Madeleine</p>
+      <p class="eyebrow">with love</p>
+    </footer>
+  </main>
+
+  <!-- Music toggle -->
+  <button id="music-btn" class="music-btn" aria-label="Toggle music" hidden>
+    <span class="bars"><i></i><i></i><i></i><i></i></span>
+  </button>
+
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="script.js"></script>
+</body>
+</html>
